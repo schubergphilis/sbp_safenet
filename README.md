@@ -5,7 +5,7 @@ This cookbook will install SafeNet Client on Windows
 
 Requirements
 ------------
-Windows
+The cookbook depends on the windows cookbook
 
 
 Attributes
