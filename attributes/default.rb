@@ -18,4 +18,5 @@
 #
 
 default['safenet']['package_name']  = 'SafeNet Authentication Client 8.2'
-default['safenet']['url']          	= ''
+default['safenet']['url']           = ''
+default['safenet']['checksum']      = ''

@@ -23,6 +23,7 @@ end
 
 windows_package node['safenet']['package_name'] do
   source node['safenet']['url']
+  checksum node['safenet']['checksum']
   options '/quiet /qn /passive'
   installer_type :msi
   action :install
