@@ -18,7 +18,8 @@
 #
 
 if node['safenet']['url'] == ''
-  raise "The node['safenet']['url'] attribute must specify a valid download URL!"
+  Chef::Log.warn "Attribute node['safenet']['url'] is empty, so package \"#{node['safenet']['package_name']}\" will not be installed"
+  return
 end
 
 windows_package node['safenet']['package_name'] do
