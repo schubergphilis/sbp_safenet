@@ -26,7 +26,7 @@ windows_package node['safenet']['package_name'] do
   source node['safenet']['url']
   checksum node['safenet']['checksum']
   options '/quiet /qn /passive'
+  timeout node['safenet']['install_timeout']
   installer_type :msi
   action :install
 end
-
